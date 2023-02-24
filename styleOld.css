@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,regular,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caramel:regular&display=swap");
+:root{
+       font-size: 18px;
+       --baseWidth: 1280px;
+       
+}
+.wrapper{
+       margin: 0 auto;
+       max-width: var(--baseWidth);
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       background: #C1BDBD;
+}
+
+/*_________________________ШАПКА________________________*/
+.container-header {
+      
+       max-width: var(--baseWidth);
+       margin: 0 auto;
+       background-color: rgb(46, 36, 23);
+       display: flex;
+     
+      
+       
+}
+.logo {
+    
+      flex: 0 0 auto;
+      
+}
+nav.menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1 0 auto;
+}
+ul.menu__list {
+       display: flex;
+     gap: 20px;
+       flex: 1 0 auto;
+      justify-content: space-around;
+      
+      
+}
+.menu__item {
+      
+     
+}
+.menu__link {
+       color: white;
+}
+.menu__link:hover {
+       color: rgb(227, 78, 4);
+}
+
+
+
+
+/*_________________________ОСНОВНОЙ_КОНТЕНТ________________________*/
+.main{
+       max-width: var(--baseWidth); 
+       flex:1 1 auto; 
+       padding: 50px;
+}
+.main__text-container{
+       margin: 0 auto;
+       max-width: 300px;
+       border: 1px solid grey;
+      
+}
+.main__text {
+       font-size: 18px;
+       margin: 1em;
+       text-align: center;
+       color: #FFFFFF;
+}
+
+.main__text:first-child{    /*Выбор первого элемента среди классов text*/
+       background-color: rgb(13, 21, 45);  
+}
+.main__text:nth-child(2){   /*Выбор второго элемента среди классов text*/
+       background-color: tomato;
+}
+.main__text:nth-child(3){  /*Выбор третьего элемента среди классов text*/
+       background-color: rgb(20, 80, 24);
+}
+.main__text:last-child{    /*Выбор последнего элемента среди классов text*/
+       background-color: rgb(158, 141, 10);
+}
+
+
+
+
+/*_________________________FOOTER________________________*/
+
+.footer {
+       max-width: var(--baseWidth);
+       background-color: black;
+
+       border-radius: 40px 40px 0px 0px;
+       height: 325px;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 600;
+       font-size: 20px;
+       line-height: 24px;
+       color: #FFFFFF;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+
+}
+.footer-container{
+      
+       flex-basis: 820px;
+       display: flex;
+       justify-content: space-between
+       
+       
+}
+
+
+.footer-ico{
+       flex: 0 0 33.333%;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+}
+.footer-ico__text{
+font-family: 'Caramel';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+}
+
+.footer-menu {
+       display: flex;
+       gap: 15px;
+       flex: 0 0 33.333%;
+       justify-content: space-evenly;
+       align-items: center;
+}
+.footer-menu__list {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       
+      
+}
+.footer-menu__item {
+       
+}
+.footer-menu__link {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+.footer-menu__link:hover {
+       font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: rgb(227, 78, 4);
+}
+
+.footer-contacts{
+       display: flex;
+       flex: 0 0 33.333%;
+       justify-content: flex-end;
+}
+.footer-contacts__container{
+       
+     
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       justify-content: center;
+   
+}
+
+
+
+.footer-contacts__mail {
+       font-family: 'Assistant';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+display: inline-flex;
+align-items: center;
+}
+
+
+
+
+.footer-contacts__mail-text {
+      
+
+
+height: 21px;
+font-family: 'Assistant';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-decoration: underline;
+padding-left: 16.5px;
+}
+
+.footer-contacts__phone{
+display: inline-flex;
+align-items: center;
+}
+
+
+.footer-contacts__phone-text {
+height: 21px;
+font-family: 'Assistant';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+padding-left: 29px;
+
+
+
+
+}
+
+.footer-contacts__year{
+       font-size: 15px;
+line-height: 140.68%;
+
+
+letter-spacing: 0.05em;
+}
+.footer-contacts__copyright {
+       font-family: 'Assistant';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 140.68%;
+      
+       letter-spacing: 0.05em;
+}
+
+
+
+
+
+
+
+
+
+/*16 базовых селекторов*/
+
+/*Универсальный селектор */
+/* *{  
+ margin: 0;
+ padding: 0;
+} */
+/*селектор тега*/
+/* a { color: red; }       
+ul { margin-left: 0; }
+       */
+/* селектор ID */
+/* #container {   
+ width: 960px;
+ margin: auto;
+} */
+ /* селектор ID и все что в нем */
+/* #container * {  
+    border: 1px solid black;
+   } */
+/* селектор класса */
+/* .error {        
+color: red;
+} */
+ /* контекстный (только к тегу а, который в li */
+/* li a {             
+text-decoration: none;
+color: red;
+} */
+
+/* Соседний селектор. 1 элемент на том же уровне, если идет сразу за ul*/
+/* ul + p {
+ color: red; 
+} */
+/*Выбор только прямых потомков ( 1 уровень вложенности)*/
+/* div.block > p {
+color: chartreuse;
+} */
+
+/*Родственный селектор выбор всех элементов p, после элемента с класом block на том же уровне*/
+/* div.block ~ p {
+ color: red;
+} */
+/* Выберет только те ссылки, у которых имеется указанный атрибут title. */
+/* a[href] { 
+ color: green;
+} */
+/* ссылки,c данным href */
+/* a[href="http://youtube.com"] { 
+color: #890909; 
+}
+
+a[href="http://twitter.com"]{
+       font-size: 24px;
+       color:darkslateblue;
+} */
+
+/* * говорит, что указанное значение должно быть частью указанного атрибута.
+Выберет и youtube.com, и net.tubel.com,, и даже rutube.com.*/
+/* a[class*="link"] {
+color: #7bf806; 
+} */
+
+/*^говорит, что указанное значение должно начинаться с http.*/
+ /* a[href^="http"] {  
+color:green;
+} */
+
+/* ~говорит, что указанное значение может 
+быть одним из слов, которые есть 
+значением атрибута*/
+/* a[class~="link"] {  
+font-size: 200%;
+} */
+
+/* $ указывает на конец строки. В этом случае мы ищем все ссылки на фото, 
+т.е. путь в них должен заканчиваться на .jpg. */
+/* a[href$=".jpg"] {
+ color: red;
+} */
+
+/* Для выбора всех типов изображений, включая png, jpeg,jpg, gif */
+/* img[data-filetype="image"] {
+ border: 5px solid red;
+} */
